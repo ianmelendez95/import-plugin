@@ -10,12 +10,14 @@ import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
 import com.github.ianmelendez95.importplugin.MyBundle
 import com.github.ianmelendez95.importplugin.services.MyProjectService
+import com.intellij.codeInsight.quickfix.UnresolvedReferenceQuickFixProvider
 import javax.swing.JButton
 
 
 class MyToolWindowFactory : ToolWindowFactory {
 
     init {
+        UnresolvedReferenceQuickFixProvider
         thisLogger().warn("Don't forget to remove all non-needed sample code files with their corresponding registration entries in `plugin.xml`.")
     }
 
